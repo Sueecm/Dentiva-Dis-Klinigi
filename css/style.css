@@ -1,0 +1,30 @@
+:root {
+    --mavi: #35508b;
+    --mor: #5957cc;
+    --gradyan: linear-gradient(135deg, #6a88c9, #5957cc);
+    --danger: #ef4444;
+    --success: #22c55e;
+    --bg: #f1f5f9;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+body { background: var(--bg); color: #475569; }
+
+
+.mesaj-kutusu { padding: 12px; margin-bottom: 20px; border-radius: 10px; font-size: 14px; font-weight: 500; }
+.hata, .hata-kutusu { background-color: #fde8e8; color: #9b1c1c; border: 1px solid #fbd5d5; }
+.basari { background-color: #def7ec; color: #03543f; border: 1px solid #bcf0da; }
+
+.btn { padding: 8px 15px; border: none; border-radius: 8px; cursor: pointer; font-weight: bold; font-size: 12px; text-decoration: none; display: inline-block; }
+.btn-add { background: var(--gradyan); color: white; }
+.btn-delete { background: var(--danger); color: white; }
+.btn-success { background: var(--success); color: white; }
+
+
+input, select, textarea { width: 100%; padding: 12px; border: 1px solid #e2e8f0; border-radius: 10px; background: #f8fafc; font-size: 14px; outline: none; transition: 0.3s; }
+input:focus, select:focus, textarea:focus { border-color: var(--mavi); box-shadow: 0 0 0 3px rgba(53, 80, 139, 0.1); }
+
+.badge { padding: 4px 8px; border-radius: 6px; font-size: 11px; font-weight: bold; }
+.badge-waiting { background: #fef3c7; color: #92400e; }
+.badge-done { background: #dcfce7; color: #166534; }
+
